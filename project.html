@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Devloper Portfolio </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial,  sans-serif;
+            background-color: rgb(15,15,44);
+            color: white;
+            padding-top: 80px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(12,12,75);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        nav.logo{
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+        nav .nav-links ul{
+            display: flex;
+            gap: 30px;
+        }
+        nav .nav-links ul li{
+            list-style: none;
+        }
+        nav .nav-links ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transform: color 0.3s none;
+        }
+        nav .nav-links ul li a:hover{
+            color:  #23169c;
+        }
+        .project-section{
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .project-section h1{
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #2256c7;
+        }
+        .filter-options{
+            margin-bottom: 30px;
+        }
+        .filter-btn{
+            background-color: #183ca1;
+            border:none;
+            padding: 10px 20px;
+            color:white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .filter-btn:hover{
+            background-color: #1822af;
+        }
+        .project-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+        .project-card{
+            background-color: #2525a1;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(30,44,235,0.5);
+            overflow: hidden;
+            width: 100%;
+            max-width: 350px;
+            transition: transform 0.3s ease,box-border 0.3s ease;
+
+        }
+        .project-card:hover{
+            transition: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0,0,0,0.7);
+        }
+        .procect-card img{
+            width: 100%;
+            height: 20px;
+            object-fit: 50px;
+            border-bottom: 2px solid #243fb4;
+        }
+        .project-card web image{
+            height:20px;
+            width: 100px;
+        }
+        
+        .project-details{
+            padding: 20px;
+        }
+        .project-details h3{
+            font-size: 1rem;
+            margin-bottom: 18px;
+            color: #8e44ad;
+        }
+        .project-details p{
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+        .view-btn{
+            padding: 10px 20px;
+            background-color: #8e44ad;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color o.3s ease;
+        }
+        .view-btn:hover{
+            background-color: #7440a5;
+
+        }
+        footer{
+            background-color: #1a1a2e;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+        }
+        footer p{
+            font-size: 0.9rem;
+        }
+        @media(max-width:768){
+            nav .nav-links ul{
+                flex-direction: column;
+            }
+            .project-grid{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Home</a></li>
+                    <li><a href="contact.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="projects"class="project-section">
+        <h1>My Projects</h1>
+        <div class="filter-options">
+            <button class="filter-btn"data-filter="all">all</button>
+            <button class="filter-btn"data-filter="web">wev devlopment</button>
+            <button class="filter-btn"data-filter="app">App devlopment</button>
+            <button class="filter-btn"data-filter="design">UI/UX Design</button>  
+        </div>
+        <div class="project-grid">
+            <div class="project-card web">
+                <img src="project1..webp"alt="Project 1">
+                <div class="project-details">
+                    <h2>Project 1</h2>
+                    <p>A web development project that solves problem X.</p>
+                    <a href="#"class="view-btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card app">
+                <img src="project2.avif"alt="Project 2">
+                <div class="project-details">
+                    <h2>Project 2</h2>
+                    <p>A mobile app development project that solves problem Y.</p>
+                    <a href="#"class="view-btn">View Project</a>
+
+                </div>
+
+            </div>
+            <div class="project-card web">
+                <img src="s.avif"alt="Project 3">
+                <div class="project-details">
+                    <h2>Project 3</h2>
+                    <p>UI/UX design project focused on improving user experience Z.</p>
+                    <a href="#"class="view-btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card web">
+                <img src="project4.avif"alt="Project 4">
+                <div class="project-details">
+                    <h2>Project</h2>
+                    <p>A responsive website designed for e-commerce</p>
+                    <a href="#"class="view-btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card app">
+                <img src="project6.jpeg"alt="Project 5">
+                <div class="project-details">
+                    <h2>Project 5</h2>
+                    <p>A mobile app that helps user track their fitness goals.</p>
+                    <a href="#"class="view-btn">View Project</a>
+                </div>
+            </div>
+            <div class="project-card design">
+                <img src="j.jpeg"alt="Project 6">
+                <div class="project-details">
+                    <h2>Project 6</h2>
+                    <p>Designing a clean and mininmalistic UI for a productivity app.</p>
+                    <a href="#"class="view-btn">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer content">
+            <p>@copy;2025 Anuradha's Portfolio.All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
