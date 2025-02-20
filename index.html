@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuradha - Devloper Portfolio</title>
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">-->
+<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">-->
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color:white; 
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: blue(18,18,62);
+        }
+        nav ul{
+            display: flex;
+            justify-content:center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            font-size: 1.04rem;
+            color: rgb(153, 153, 226);
+        }
+        main hr{
+            border:a;
+            background: #9c979c;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px,0;
+        }
+        .firstSection > div{
+            width: 30%;
+        }
+        .leftSection{
+     
+           font-size: 3rem;
+        }
+        .leftSection .btn{
+            padding: 23px;
+        }
+
+        .leftSection .btn{
+           padding: 12px;
+        background: rgb(108, 165, 108);
+         color: white;
+     border:2px solid white;
+     border-radius:6px;
+     font-size:20px;
+     cursor:pointer;
+       }
+        .rightSection img{
+           width: 70%;
+           
+        }
+        .purple{
+            color: rgb(171, 128, 211);
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+            color: rgb(171, 128, 211);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin:auto;
+            height: 80vh;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+           
+        }
+        .image-down{
+            width:53px;
+            position: relative;
+            top:1px;
+            left:1px;
+        }
+        .secondSection .box{
+            background: white;
+            width: 100vw;
+            height: 2px;
+            margin: 56px -230px;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        .image-top{
+            width:23px;
+            position: relative;
+            top:-32px;
+            left:-9px;
+        }
+        .vertical-title{
+            position: relative;
+            top:75px;
+            width: 50px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150;
+            font-size: 15px;
+            padding: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Anuradha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                       
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Anuradha</span>
+
+              
+                <div> and I am a passionate</div>
+                
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                        <button class="btn">Visit Github</button>
+                    
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="developer-8764521_1280.jpg"alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray"></span>what I have done so far</span>
+            
+            <h1><img class="image-down"src="devloper.png"alt="">Work Experience(2022-2025)</h1>
+            
+            
+            <div class="box">
+               <div class="vertical">
+                <img class="image-top"src="pngwing.com.png"alt="">
+               <div class="vertical-title">
+                   HTML Developer
+               </div>
+               <div class="vertical-desc">
+                HTML stands for Hypertext Markup Language.
+                 It's a set of codes that tells web browsers how to display text and images on a web page.
+                  HTML is used to create web pages and web applications. </div>
+            </div>
+
+            <div class="vertical">
+                <img class="image-top"src="css.png"alt="">
+                <div class="vertical-title">
+                    CSS Developer
+                </div>
+                <div class="vertical-desc">This is a demonstration of how different stylesheets can change the layout of your HTML page.
+                     You can change the layout of this page by selecting different stylesheets in the menu.</div>
+             </div>
+             <div class="vertical">
+                <img class="image-top"src="js.png"alt="">
+                <div class="vertical-title">
+                    JAVA SCRIPT Developer
+                </div>
+                <div class="vertical-desc">JavaScript (JS) is a programming language used to create interactive web pages. It's a core technology of the World Wide Web.</div>
+             </div>
+             <div class="vertical">
+                <img class="image-top"src="py.png"alt="">
+                <div class="vertical-title">
+                    PYTHON Developer
+                </div>
+                <div class="vertical-desc">Python is a programming language that can be used for many tasks, including web development, data analysis, and machine learning.</div>
+             </div>
+             <div class="vertical">
+                <img class="image-top"src="django.png"alt="">
+                <div class="vertical-title">
+                    Django Developer
+                </div>
+                <div class="vertical-desc">Django is a free, open-source web framework that helps developers build websites using Python.
+                     It's a collection of reusable modules that can speed up web development.</div>
+             </div>
+             <div class="vertical">
+                <img class="image-top"src="c.png"alt="">
+                <div class="vertical-title">
+                    C Developer
+                </div>
+                <div class="vertical-desc">C is a procedural programming language that was developed to write the UNIX operating system.
+                     It's a compiled language that provides low-level access to memory.</div>
+             </div>
+             <div class="vertical">
+                <img class="image-top"src="c++.png"alt="">
+                <div class="vertical-title">
+                    C++ Developer
+                </div>
+                <div class="vertical-desc">C++ is a programming language used to create software. 
+                    It's an object-oriented language that was created by Bjarne Stroustrup in 1979.
+                     C++ is used in many fields, including operating systems, games, and embedded systems.</div>
+             </div>
+             <div class="vertical">
+                <img class="image-top"src="sql.png"alt="">
+                <div class="vertical-title">
+                    MySql Developer
+                </div>
+                <div class="vertical-desc">MySQL is an open-source relational database management system (RDBMS) that stores and manages data.
+                     It's based on structured query language (SQL).</div>
+             </div>
+            </div>
+            
+         </section>
+         
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Devloper', 'Graphics Designer','Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+       <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</body>
+</html>
